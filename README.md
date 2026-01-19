@@ -1,96 +1,64 @@
-<div align="center">
+# NUCLEA
 
-```
-███╗   ██╗██╗   ██╗ ██████╗██╗     ███████╗ █████╗
-████╗  ██║██║   ██║██╔════╝██║     ██╔════╝██╔══██╗
-██╔██╗ ██║██║   ██║██║     ██║     █████╗  ███████║
-██║╚██╗██║██║   ██║██║     ██║     ██╔══╝  ██╔══██║
-██║ ╚████║╚██████╔╝╚██████╗███████╗███████╗██║  ██║
-╚═╝  ╚═══╝ ╚═════╝  ╚═════╝╚══════╝╚══════╝╚═╝  ╚═╝
-```
-
-<h2>⚡🔥 N U C L E A 🔥⚡</h2>
-<h4>Small Device • Unlimited Cyber Power</h4>
-
-<img src="https://img.shields.io/badge/ESP32‑CORE‑2.0.16-red?style=for-the-badge">  
-<img src="https://img.shields.io/badge/HARDWARE‑HACKING-black?style=for-the-badge">  
-<img src="https://img.shields.io/badge/STATUS‑ACTIVE‑DEV-orange?style=for-the-badge">  
-<img src="https://img.shields.io/badge/POWER‑MAX‑MODE-green?style=for-the-badge">
-
-</div>
+**Portable Hardware Security Toolkit**
+Compact • Modular • Research‑Grade
 
 ---
 
-## 🧠💥 SYSTEM ONLINE
+## Overview
 
-```
-[BOOT] Initializing NUCLEA Core...
-[OK]  ESP32 Kernel Loaded
-[OK]  RF / IR / BLE Modules Ready
-[OK]  Security Mode: ENABLED
-[RUN] Entering Cyber Control Interface...
-```
+NUCLEA is a compact, all‑in‑one hardware platform for **ethical hacking**, **hardware security research**, and **cybersecurity education**.
+Inspired by devices like Flipper Zero, NUCLEA integrates multiple RF, IR, BLE, RFID, and USB attack and testing modules into a single portable tool.
 
-> *“Looks simple. Works brutal.”*
+Designed for:
 
-**NUCLEA** is a next‑generation **pocket cyber weapon** designed for ethical hackers, hardware researchers, and cyber labs.
-
-* ⚡ Ultra‑Fast
-* 🔥 Ultra‑Powerful
-* 🧩 Fully Modular
-* 🛡 Research‑Grade
+* Security researchers
+* Penetration testers
+* Cyber labs & workshops
+* Academic demonstrations
 
 ---
 
-## ⚔️🔥 CYBER ARSENAL
+## Features
 
-```
-[ LOADING MODULES... ]
-████████████████████ 100%
-```
-
-| 🔧 Module           | 💣 Power | ⚡ Function                  |
-| ------------------- | -------- | --------------------------- |
-| 🟦 BLE Rubber Ducky | 🔥🔥🔥🔥 | Wireless BadUSB payloads    |
-| ⌨️ USB Ducky        | 🔥🔥🔥   | HID keyboard injection      |
-| 📡 RF Cloner        | 🔥🔥🔥🔥 | Capture & replay RF signals |
-| 🔴 IR Cloner        | 🔥🔥     | Universal remote hijack     |
-| 📢 Beacon Spam      | 🔥🔥🔥   | Wi‑Fi / BLE flood           |
-| 🪪 RFID Cloner      | 🔥🔥🔥   | Card emulation & cloning    |
-| 🚫 RF Jammer        | 💀💀💀💀 | Research signal disruption  |
+* BLE Rubber Ducky (BadUSB over Bluetooth)
+* USB Ducky (HID keyboard injection)
+* RF Cloner (315 / 433 MHz)
+* IR Cloner & Universal Remote
+* Beacon Spam (Wi‑Fi / BLE)
+* RFID Cloner (125 kHz / 13.56 MHz)
+* RF Jammer (research mode)
+* Modular expansion ports
 
 ---
 
-## 🧩⚙️ HARDWARE CORE
+## Hardware Platform
 
-```
-[SCANNING HARDWARE...]
-✔ ESP32 / ESP32‑S3 DETECTED
-✔ NRF24L01 RADIO ONLINE
-✔ OLED DISPLAY READY
-✔ RFID + IR READY
-```
-
-* 🧠 MCU: **ESP32 / ESP32‑S3**
-* 📡 Radio: **nRF24L01+ PA + LNA**
-* 🖥 Display: **OLED SPI / I2C**
-* 🔴 IR TX / RX
-* 🪪 RFID Reader
-* 🔋 Power: **Li‑ion / Li‑Po**
+* MCU: ESP32 / ESP32‑S3
+* Display: OLED (SPI / I2C)
+* Radio: nRF24L01+ PA + LNA
+* IR transmitter & receiver
+* RFID reader (MFRC522 / PN532)
+* Power: Li‑ion / Li‑Po battery
 
 ---
 
-## ⚡🚀 QUICK INSTALL (3 STEPS)
+## Software Setup
 
-### ① Install Arduino IDE
+### 1. Install Arduino IDE
 
-👉 [https://www.arduino.cc/en/software](https://www.arduino.cc/en/software)
+Download from:
+[https://www.arduino.cc/en/software](https://www.arduino.cc/en/software)
 
 ---
 
-### ② Add ESP32 Board URL
+### 2. Add ESP32 Board URL
 
-`File → Preferences → Additional Board URLs`
+Open:
+
+`File → Preferences → Additional Board Manager URLs`
+
+Add:
 
 ```
 https://raw.githubusercontent.com/espressif/arduino-esp32/gh-pages/package_esp32_index.json
@@ -98,108 +66,112 @@ https://raw.githubusercontent.com/espressif/arduino-esp32/gh-pages/package_esp32
 
 ---
 
-### ③ Install ESP32 Core
+### 3. Install ESP32 Core (Recommended Version)
 
-Search in Boards Manager:
+`Tools → Board → Boards Manager`
+
+Search:
 
 ```
 esp32 by Espressif Systems
 ```
 
-Install Version: **2.0.16** ⚡
+Install:
+
+* Version: **2.0.16**
 
 ---
 
-## 📚📦 LIBRARIES
+## Required Libraries
 
-```
-[INSTALLING DEPENDENCIES...]
-████████████████████ 100%
-```
+Install from Arduino Library Manager:
 
-* `Adafruit GFX`
-* `Adafruit SSD1306 / SH1106G`
-* `ESP32 BLE Keyboard`
-* `RF24`
-* `IRremoteESP8266`
-* `MFRC522`
+* Adafruit GFX Library
+* Adafruit SSD1306 or Adafruit SH1106G
+* ESP32 BLE Keyboard
+* RF24 (TMRh20)
+* IRremoteESP8266
+* MFRC522
 
----
+Optional:
 
-## ⚡🚀 FLASH SEQUENCE
-
-```
-CONNECT → SELECT → UPLOAD → BOOT → HACK MODE ENABLED
-```
-
-After upload:
-
-```
-[NUCLEA] Boot Animation
-[MENU] Cyber Control Interface Ready
-```
+* ESPAsyncWebServer
+* AsyncTCP
+* ArduinoJson
 
 ---
 
-## 🎮🧭 CONTROL MENU
+## Board Configuration
 
-```
-> BLE DUCKY
-> USB DUCKY
-> RF CLONE
-> IR CLONE
-> BEACON SPAM
-> RFID TOOLS
-> RF JAM
-> SETTINGS
-```
+Recommended Arduino settings:
+
+* Board: ESP32 Dev Module / ESP32‑S3 Dev Module
+* Upload Speed: 921600
+* Flash Mode: QIO
+* Partition Scheme: Default 4MB with SPIFFS
 
 ---
 
-## 🔐⚠️ SECURITY MODE
+## Flashing Firmware
 
-```
-[WARNING] AUTHORIZATION REQUIRED
-```
+1. Connect NUCLEA to PC via USB
+2. Open the firmware `.ino` file
+3. Select the correct board and port
+4. Click **Upload**
 
-This tool is for:
-
-* 🎓 Education
-* 🧪 Research
-* 🛡 Authorized testing ONLY
-
-🚫 Illegal use = **YOU ARE RESPONSIBLE**
+After flashing, the OLED displays the boot screen and main menu.
 
 ---
 
-## 👨‍💻🏢 CREATOR
+## Main Menu
+
+* BLE Ducky
+* USB Ducky
+* RF Clone
+* IR Clone
+* Beacon Spam
+* RFID Tools
+* RF Jam (Lab Mode)
+* Settings
+
+---
+
+## Legal Notice
+
+This project is intended only for:
+
+* Education
+* Authorized penetration testing
+* Hardware security research
+
+Do not use this device on systems or networks without explicit permission.
+The author and contributors are not responsible for misuse.
+
+---
+
+## Author
 
 **Muhammed Nihal MP**
 Founder – **NEXLOR**
-
-> *Engineering pocket‑sized cyber weapons.*
-
----
-
-## 🔮 ROADMAP
-
-```
-[UPGRADING SYSTEM...]
-```
-
-* 🌐 Web Control Panel
-* 📲 Android Remote App
-* 🔄 OTA Updates
-* 📍 GPS Module
-* 🧩 Plugin System
+Cybersecurity | Hardware Hacking | IoT Security
 
 ---
 
-<div align="center">
+## Project Status
 
-🔥🔥🔥🔥🔥
+* Current Version: NUCLEA v1.x
+* Development: Active
 
-<h2>NUCLEA</h2>
-<h4>"Looks Simple. Hits Powerful."</h4>
+Planned:
 
-</div>
+* Web control panel
+* OTA updates
+* Mobile app integration
+* GPS module support
+
+---
+
+## License
+
+This project is released for educational and research use.
+See the LICENSE file for details.

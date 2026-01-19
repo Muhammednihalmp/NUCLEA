@@ -9,72 +9,86 @@
 ╚═╝  ╚═══╝ ╚═════╝  ╚═════╝╚══════╝╚══════╝╚═╝  ╚═╝
 ```
 
-<h3>⚡ Pocket‑Sized Cyber Power ⚡</h3>
+<h2>⚡🔥 N U C L E A 🔥⚡</h2>
+<h4>Small Device • Unlimited Cyber Power</h4>
 
-<img src="https://img.shields.io/badge/ESP32‑Powered-red?style=for-the-badge">  
-<img src="https://img.shields.io/badge/Hardware‑Hacking-black?style=for-the-badge">  
-<img src="https://img.shields.io/badge/Ethical‑Security-green?style=for-the-badge">  
-<img src="https://img.shields.io/badge/Status‑Active‑Dev-orange?style=for-the-badge">
+<img src="https://img.shields.io/badge/ESP32‑CORE‑2.0.16-red?style=for-the-badge">  
+<img src="https://img.shields.io/badge/HARDWARE‑HACKING-black?style=for-the-badge">  
+<img src="https://img.shields.io/badge/STATUS‑ACTIVE‑DEV-orange?style=for-the-badge">  
+<img src="https://img.shields.io/badge/POWER‑MAX‑MODE-green?style=for-the-badge">
 
 </div>
 
 ---
 
-## 🧠💀 Welcome to NUCLEA
+## 🧠💥 SYSTEM ONLINE
 
-> *“Not a toy. Not a gadget. A **weapon‑grade cyber toolkit**.”*
+```
+[BOOT] Initializing NUCLEA Core...
+[OK]  ESP32 Kernel Loaded
+[OK]  RF / IR / BLE Modules Ready
+[OK]  Security Mode: ENABLED
+[RUN] Entering Cyber Control Interface...
+```
 
-**NUCLEA** is an elite, stealth‑class, all‑in‑one **hardware cybersecurity exploitation platform** inspired by **Flipper Zero** — redesigned to be:
+> *“Looks simple. Works brutal.”*
 
-* ⚡ Faster
-* 🔥 More Powerful
+**NUCLEA** is a next‑generation **pocket cyber weapon** designed for ethical hackers, hardware researchers, and cyber labs.
+
+* ⚡ Ultra‑Fast
+* 🔥 Ultra‑Powerful
 * 🧩 Fully Modular
-* 🧠 Research‑Grade
-
-Built for:
-
-* 🧪 Hardware security researchers
-* 🎓 Cyber labs & workshops
-* 🛡 Professional penetration testers
+* 🛡 Research‑Grade
 
 ---
 
-## 🔥⚔️ Arsenal (Core Modules)
+## ⚔️🔥 CYBER ARSENAL
 
-| Module              | Status | Description                           |
-| ------------------- | ------ | ------------------------------------- |
-| 🟦 BLE Rubber Ducky | ✅      | BadUSB payloads over Bluetooth        |
-| ⌨️ USB Ducky        | ✅      | HID keyboard injection                |
-| 📡 RF Cloner        | ✅      | 315 / 433 MHz signal capture & replay |
-| 🔴 IR Cloner        | ✅      | Universal remote emulation            |
-| 📢 Beacon Spam      | ✅      | Wi‑Fi / BLE flood attacks             |
-| 🪪 RFID Cloner      | ✅      | 125kHz / 13.56MHz card cloning        |
-| 🚫 RF Jammer        | ⚠️ Lab | Research‑mode signal disruption       |
-| 🌐 Web Panel        | 🔜     | Remote control dashboard              |
+```
+[ LOADING MODULES... ]
+████████████████████ 100%
+```
+
+| 🔧 Module           | 💣 Power | ⚡ Function                  |
+| ------------------- | -------- | --------------------------- |
+| 🟦 BLE Rubber Ducky | 🔥🔥🔥🔥 | Wireless BadUSB payloads    |
+| ⌨️ USB Ducky        | 🔥🔥🔥   | HID keyboard injection      |
+| 📡 RF Cloner        | 🔥🔥🔥🔥 | Capture & replay RF signals |
+| 🔴 IR Cloner        | 🔥🔥     | Universal remote hijack     |
+| 📢 Beacon Spam      | 🔥🔥🔥   | Wi‑Fi / BLE flood           |
+| 🪪 RFID Cloner      | 🔥🔥🔥   | Card emulation & cloning    |
+| 🚫 RF Jammer        | 💀💀💀💀 | Research signal disruption  |
 
 ---
 
-## 🧩⚙️ Hardware Core
+## 🧩⚙️ HARDWARE CORE
+
+```
+[SCANNING HARDWARE...]
+✔ ESP32 / ESP32‑S3 DETECTED
+✔ NRF24L01 RADIO ONLINE
+✔ OLED DISPLAY READY
+✔ RFID + IR READY
+```
 
 * 🧠 MCU: **ESP32 / ESP32‑S3**
 * 📡 Radio: **nRF24L01+ PA + LNA**
 * 🖥 Display: **OLED SPI / I2C**
 * 🔴 IR TX / RX
-* 🪪 RFID (MFRC522 / PN532)
-* 🔋 Power: Li‑ion / Li‑Po
-* 🧱 Case: Compact • Rugged • Pocket‑Safe
+* 🪪 RFID Reader
+* 🔋 Power: **Li‑ion / Li‑Po**
 
 ---
 
-## 💻🛠 Installation – Quick Start
+## ⚡🚀 QUICK INSTALL (3 STEPS)
 
-### ⚡ Step 1 – Install Arduino IDE
+### ① Install Arduino IDE
 
 👉 [https://www.arduino.cc/en/software](https://www.arduino.cc/en/software)
 
 ---
 
-### ⚡ Step 2 – Add ESP32 Board URL
+### ② Add ESP32 Board URL
 
 `File → Preferences → Additional Board URLs`
 
@@ -84,25 +98,24 @@ https://raw.githubusercontent.com/espressif/arduino-esp32/gh-pages/package_esp32
 
 ---
 
-### ⚡ Step 3 – Install ESP32 Core
+### ③ Install ESP32 Core
 
-`Tools → Board → Boards Manager`
-
-Search:
+Search in Boards Manager:
 
 ```
 esp32 by Espressif Systems
 ```
 
-Install:
-
-* 🔹 Version: **2.0.16** (RECOMMENDED)
+Install Version: **2.0.16** ⚡
 
 ---
 
-## 📚📦 Libraries
+## 📚📦 LIBRARIES
 
-Mandatory:
+```
+[INSTALLING DEPENDENCIES...]
+████████████████████ 100%
+```
 
 * `Adafruit GFX`
 * `Adafruit SSD1306 / SH1106G`
@@ -111,80 +124,82 @@ Mandatory:
 * `IRremoteESP8266`
 * `MFRC522`
 
-Advanced:
-
-* `ESPAsyncWebServer`
-* `AsyncTCP`
-* `ArduinoJson`
-
 ---
 
-## ⚡🚀 Flashing Sequence
+## ⚡🚀 FLASH SEQUENCE
 
 ```
-[ CONNECT ] → [ SELECT BOARD ] → [ UPLOAD ] → [ BOOT ] → [ DOMINATE ]
+CONNECT → SELECT → UPLOAD → BOOT → HACK MODE ENABLED
 ```
 
-After boot:
+After upload:
 
-* 🔹 Animated NUCLEA Logo
-* 🔹 Cyber Control Menu
-
----
-
-## 🧭🎮 Control Interface
-
-Main Menu:
-
-* 🟦 BLE Ducky
-* ⌨️ USB Ducky
-* 📡 RF Clone
-* 🔴 IR Clone
-* 📢 Beacon Spam
-* 🪪 RFID Tools
-* 🚫 RF Jam
-* ⚙️ Settings
+```
+[NUCLEA] Boot Animation
+[MENU] Cyber Control Interface Ready
+```
 
 ---
 
-## 🔐⚠️ LEGAL MODE ENABLED
+## 🎮🧭 CONTROL MENU
 
-> ❗ WARNING
+```
+> BLE DUCKY
+> USB DUCKY
+> RF CLONE
+> IR CLONE
+> BEACON SPAM
+> RFID TOOLS
+> RF JAM
+> SETTINGS
+```
 
-This device is for:
+---
+
+## 🔐⚠️ SECURITY MODE
+
+```
+[WARNING] AUTHORIZATION REQUIRED
+```
+
+This tool is for:
 
 * 🎓 Education
 * 🧪 Research
-* 🛡 Authorized penetration testing ONLY
+* 🛡 Authorized testing ONLY
 
-🚫 Any illegal usage = YOUR responsibility.
+🚫 Illegal use = **YOU ARE RESPONSIBLE**
 
 ---
 
-## 👨‍💻🏢 Creator
+## 👨‍💻🏢 CREATOR
 
 **Muhammed Nihal MP**
 Founder – **NEXLOR**
 
-> *Engineering the future of hardware exploitation.*
+> *Engineering pocket‑sized cyber weapons.*
 
 ---
 
-## 🔮 Roadmap
+## 🔮 ROADMAP
 
-* 🌐 Web Control Dashboard
-* 📲 Android App Control
-* 🔄 OTA Firmware Updates
-* 📍 GPS Tracking Module
-* 🧩 Plugin Marketplace
+```
+[UPGRADING SYSTEM...]
+```
+
+* 🌐 Web Control Panel
+* 📲 Android Remote App
+* 🔄 OTA Updates
+* 📍 GPS Module
+* 🧩 Plugin System
 
 ---
 
 <div align="center">
 
-🔥🔥🔥
+🔥🔥🔥🔥🔥
 
 <h2>NUCLEA</h2>
-<h4>"Small Device. Unlimited Cyber Power."</h4>
+<h4>"Looks Simple. Hits Powerful."</h4>
 
 </div>

@@ -43,6 +43,81 @@ Designed for:
 
 ---
 
+## Pin Connections
+
+The following pin mapping is the **default reference configuration** for NUCLEA (ESP32 / ESP32‑S3).
+You may change GPIO assignments in firmware if required.
+
+### Core Connections
+
+| Module / Signal | ESP32 GPIO | Notes                 |
+| --------------- | ---------- | --------------------- |
+| OLED VCC        | 3.3V       | Power (do NOT use 5V) |
+| OLED GND        | GND        | Ground                |
+| OLED SCK (D0)   | GPIO 18    | SPI Clock             |
+| OLED MOSI (D1)  | GPIO 23    | SPI Data              |
+| OLED CS         | GPIO 5     | Chip Select           |
+| OLED DC         | GPIO 4     | Data / Command        |
+| OLED RST        | GPIO 17    | Reset                 |
+
+---
+
+### nRF24L01+ (RF Module)
+
+| Signal | ESP32 GPIO | Notes                                   |
+| ------ | ---------- | --------------------------------------- |
+| VCC    | 3.3V       | Use stable 3.3V (recommended capacitor) |
+| GND    | GND        | Ground                                  |
+| CE     | GPIO 27    | Chip Enable                             |
+| CSN    | GPIO 15    | SPI Chip Select                         |
+| SCK    | GPIO 18    | Shared SPI Clock                        |
+| MOSI   | GPIO 23    | Shared SPI MOSI                         |
+| MISO   | GPIO 19    | Shared SPI MISO                         |
+
+---
+
+### RFID (MFRC522)
+
+| Signal   | ESP32 GPIO | Notes       |
+| -------- | ---------- | ----------- |
+| SDA (SS) | GPIO 21    | Chip Select |
+| SCK      | GPIO 18    | SPI Clock   |
+| MOSI     | GPIO 23    | SPI Data    |
+| MISO     | GPIO 19    | SPI Data    |
+| RST      | GPIO 22    | Reset       |
+| VCC      | 3.3V       | Power       |
+| GND      | GND        | Ground      |
+
+---
+
+### IR Module
+
+| Signal | ESP32 GPIO | Notes             |
+| ------ | ---------- | ----------------- |
+| IR TX  | GPIO 26    | IR LED output     |
+| IR RX  | GPIO 25    | IR receiver input |
+
+---
+
+### User Controls
+
+| Signal      | ESP32 GPIO | Notes                   |
+| ----------- | ---------- | ----------------------- |
+| Button UP   | GPIO 32    | Menu navigation         |
+| Button DOWN | GPIO 33    | Menu navigation         |
+| Button OK   | GPIO 34    | Select / Enter          |
+| Buzzer      | GPIO 14    | Optional sound feedback |
+
+---
+
+⚠️ **Important Notes**
+
+* Always power RF and OLED modules from **3.3V only**
+* Add a **10µF – 47µF capacitor** near nRF24L01 VCC for stability
+* Avoid using boot‑critical pins (GPIO 0, 2, 12, 15) unless necessary
+
+---
+
 ## Software Setup
 
 ### 1. Install Arduino IDE

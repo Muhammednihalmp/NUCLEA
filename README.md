@@ -135,7 +135,7 @@ MFRC522
 3. Install all required libraries listed above
 4. Select board: **ESP32 Dev Module**
 5. Set upload speed: **115200**
-6. Flash the `main.ino` / `main.cpp` file
+6. Flash the `nuclea.ino` file
 
 ---
 
